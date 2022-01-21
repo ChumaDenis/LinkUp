@@ -7,70 +7,149 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<h1 class="styleH1">Arnold Book Company (ABC)</h1>
-<h2 class="styleH2">Arnold Book Company (ABC) was a British publisher of comic books that operated in the late 1940s and 1950s, most actively in the period 1950 to 1954. </h2>
-<h3 class="styleH3">Arnold Book Company (ABC) was a British publisher of comic books that operated in the late 1940s and 1950s, most actively in the period 1950 to 1954. </h3>
-<h4 class="styleH4">Arnold Book Company (ABC) was a British publisher of comic books that operated in the late 1940s and 1950s, most actively in the period 1950 to 1954. </h4>
-<h5 class="styleH5">Arnold Book Company (ABC) was a British publisher of comic books that operated in the late 1940s and 1950s, most actively in the period 1950 to 1954. </h5>
-<h6 class="styleH6">Arnold Book Company (ABC) was a British publisher of comic books that operated in the late 1940s and 1950s, most actively in the period 1950 to 1954. </h6>
-<p1 class="styleP1">In the 1950s, Arnold Book Company suffered from a backlash against some of its horror comics reprints, leading to the company's closure in 1958. </p1>
-<br/>
-<p2 class="styleP2">In the 1950s, Arnold Book Company suffered from a backlash against some of its horror comics reprints, leading to the company's closure in 1958. </p2>
-<br/>
-<p3 class="styleP3">In the 1950s, Arnold Book Company suffered from a backlash against some of its horror comics reprints, leading to the company's closure in 1958. </p3>
-<br/>
-<p4 class="styleP4">In the 1950s, Arnold Book Company suffered from a backlash against some of its horror comics reprints, leading to the company's closure in 1958. </p4>
-<hr>
-
-
-<div class="one"></div>
-<div class="two"></div>
-<div class="three"></div>
-<hr>
-
-<button class="firstButton generalButton"></button>
-<button class="secondButton generalButton"></button>
-<hr>
-
-<button class="primaryButton generalButton2">Button</button>
-<button class="primaryButton generalButton2"><i class="fa fa-arrow-left"></i>Button</button>
-<br>
-<button class="ghostButton generalButton2">Button</button>
-<button class="ghostButton generalButton2"><i class="fa fa-arrow-left"></i>Button</button>
-<button class="ghostButton generalButton2">Button<i class="fa fa-arrow-right"></i></button>
-<hr>
-
-<input type="text" class="inputGeneral" >
-<div>
-    <input type="text" id="inputUser" class="inputGeneral inputLeftIcon">
-    <i class="fa fa-user fa-2x user" id="user1"></i>
-    <label for="inputUser" class="explanation">With explanation</label>
-</div>
-<div>
-    <input type="text" id="inputPassword" class="inputGeneral inputLeftIcon">
-    <i class="fa fa-eye-slash  fa-2x user" id="user2"></i>
-    <label for="inputPassword" class="explanation">With explanation</label>
-</div>
-<hr>
-
-<div class="dropdown">
-    <button class="dropbtn">Select<i class="fa fa-chevron-down"></i></button>
-    <div class="dropdown-content">
-        <a href="#">First</a>
-        <a href="#">Second</a>
-        <a href="#">Third</a>
+    <!--     (h1-h6)     -->
+    <h1 class="styleH">Arnold Book Company (ABC)</h1>
+    <h2 class="styleH">Arnold Book Company (ABC) was a British publisher of comic books that operated in the late 1940s and 1950s, most actively in the period 1950 to 1954. </h2>
+    <h3 class="styleH">Arnold Book Company (ABC) was a British publisher of comic books that operated in the late 1940s and 1950s, most actively in the period 1950 to 1954. </h3>
+    <h4 class="styleH">Arnold Book Company (ABC) was a British publisher of comic books that operated in the late 1940s and 1950s, most actively in the period 1950 to 1954. </h4>
+    <h5 class="styleH">Arnold Book Company (ABC) was a British publisher of comic books that operated in the late 1940s and 1950s, most actively in the period 1950 to 1954. </h5>
+    <h6 class="styleH">Arnold Book Company (ABC) was a British publisher of comic books that operated in the late 1940s and 1950s, most actively in the period 1950 to 1954. </h6>
+    <hr>
+    <!--     (p1-p4)     -->
+    <p class="P1">In the 1950s, Arnold Book Company suffered from a backlash against some of its horror comics reprints, leading to the company's closure in 1958. </p>
+    <p class="P2">In the 1950s, Arnold Book Company suffered from a backlash against some of its horror comics reprints, leading to the company's closure in 1958. </p>
+    <p class="P3">In the 1950s, Arnold Book Company suffered from a backlash against some of its horror comics reprints, leading to the company's closure in 1958. </p>
+    <p class="P4">In the 1950s, Arnold Book Company suffered from a backlash against some of its horror comics reprints, leading to the company's closure in 1958. </p>
+    <hr>
+    <!--     (colors)     -->
+    <div id="one" class="genClass"></div>
+    <div id="two" class="genClass"></div>
+    <div id="three" class="genClass"></div>
+    <hr id="hr1">
+    <!--     (shadows)     -->
+    <div id="backgroundShadows">
+        <h3 id="h3Shadows">Shadows</h3>
+        <button id="shadow1" class="shadows"></button>
+        <button id="shadow2" class="shadows"></button>
+        <button id="shadow3" class="shadows"></button>
+        <br>
+        <button id="shadow4" class="shadows"></button>
+        <button id="shadow5" class="shadows"></button>
+        <button id="shadow6" class="shadows"></button>
     </div>
-</div>
-<hr>
-<input type="checkbox" id="checkbox" class="firstCheckBox">
-<label for="checkbox" >Привіт</label>
-<br>
-<input type="radio" id="radio" class="Radio">
-<br>
-<input type="checkbox" id="switch"
-       class="checkbox" />
-<label for="switch" class="toggle">
+    <hr id="hr2">
+    <!--     (buttons)     -->
+    <div id="backgroundButtons">
+        <div id="primaryDiv1" class="miniDiv">
+            <button class="button primaryButton styleButton1">Button</button>
+            <button disabled class="disabledBtn primaryButton styleButton1">Button</button>
+        </div>
+        <div id="primaryDiv2" class="miniDiv">
+            <button class="primaryButton styleButton2"><i class="fa fa-arrow-left fa-2x vector1 left-vector"></i><p class="pBtn1 styleP">Button</p></button>
+            <button disabled class="disabledBtn primaryButton styleButton2"><i class="fa fa-arrow-left fa-2x vector1 left-vector"></i><p class="pBtn1 styleP">Button</p></button>
+        </div>
 
+        <div id="ghostDiv1" class="miniDiv">
+            <button class="ghostButton styleButton1">Button</button>
+            <button disabled class="disabledBtn ghostButton styleButton1">Button</button>
+        </div>
+        <div id="ghostDiv2" class="miniDiv">
+            <button class="ghostButton styleButton2"><i class="fa fa-arrow-left fa-2x vector2 left-vector"></i><p class="pBtn2 styleP">Button</p></button>
+            <button disabled class="disabledBtn ghostButton styleButton2"><i class="fa fa-arrow-left fa-2x vector2 left-vector"></i><p class="pBtn2 styleP">Button</p></button>
+        </div>
+        <div id="ghostDiv3" class="miniDiv">
+            <button class="ghostButton styleButton2"><p class="pBtn3 styleP">Button</p><i class="fa fa-arrow-right fa-2x vector2 right-vector"></i></button>
+            <button disabled class="disabledBtn ghostButton styleButton2"><p class="pBtn3 styleP">Button</p><i class="fa fa-arrow-right fa-2x vector2 right-vector"></i></button>
+        </div>
+    </div>
+    <hr id="hr3">
+    <!--     (inputs)     -->
+    <div id="backgroundInputs">
+        <div id="div1" class="inputDiv">
+            <input type="text" id="i1" class="inputGeneral input input1">
+            <label for="i1" class="explanation">With explanation</label>
+        </div>
+        <div id="div2" class="inputDiv">
+            <input required type="text" id="i2" class="inputGeneral input input1">
+            <label for="i2" class="explanation">With explanation</label>
+        </div>
+        <div id="div3" class="inputDiv">
+            <input disabled type="text" id="i3" class="inputGeneral input input1">
+            <label for="i3" class="explanation">With explanation</label>
+        </div>
+        <div id="divUser1" class="inputDiv">
+            <input type="text" id="iUser1" class="inputUser inputGeneral input input1">
+            <i class="fa fa-user fa-2x user"></i>
+            <label for="iUser1" class="explanation">With explanation</label>
+        </div>
+        <div id="divUser2" class="inputDiv">
+            <input required type="text" id="iUser2" class=" inputUser inputGeneral input input1">
+            <i class="fa fa-user fa-2x user"></i>
+            <label for="iUser2" class="explanation">With explanation</label>
+        </div>
+        <div id="divUser3" class="inputDiv">
+            <input disabled type="text" id="iUser3" class=" inputUser inputGeneral input input1">
+            <i class="fa fa-user fa-2x user"></i>
+            <label for="iUser3" class="explanation">With explanation</label>
+        </div>
+        <div id="divEye1" class="inputDiv">
+            <input type="text" id="iEye1" class=" inputGeneral input input2">
+            <i class="fa fa-eye-slash fa-2x eye"></i>
+            <label for="iEye1" class="explanation">With explanation</label>
+        </div>
+        <div id="divEye2" class="inputDiv">
+            <input required type="text" id="iEye2" class="inputGeneral input input2">
+            <i class="fa fa-eye-slash fa-2x eye"></i>
+            <label for="iEye2" class="explanation">With explanation</label>
+        </div>
+        <div id="divEye3" class="inputDiv">
+            <input disabled type="text" id="iEye3" class="inputGeneral input input2">
+            <i class="fa fa-eye-slash fa-2x eye"></i>
+            <label for="iEye3" class="explanation">With explanation</label>
+        </div>
+    </div>
+    <hr id="hr4">
+    <!--     (dropdown)     -->
+
+
+    <div class="dropdown">
+        <button class="dropbtn"><p class="pDropdown">Select</p><i class="fa fa-chevron-down down"></i></button>
+        <div class="dropdown-content">
+            <a>First</a>
+            <a class="centerElem">Second</a>
+            <a>Third</a>
+        </div>
+    </div>
+    <hr id="hr5">
+    <!--     (checkbox\switch)     -->
+
+    <div class="switchDiv">
+        <label id="checkbox1" class="container">
+            <input class="checkbox" type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+            <i class="fa fa-check check"></i>
+        </label>
+        <label id="checkbox2" class="container">
+            <input disabled class="checkbox" type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+            <i class="fa fa-check check"></i>
+        </label>
+        <div id="radio1">
+            <label class="form-control">
+                <input class="radio" type="radio" name="radio" />
+            </label>
+        </div>
+        <div id="radio2">
+            <label class="form-control">
+                <input disabled class="radio" type="radio" name="radio" />
+            </label>
+        </div>
+        <div id="switch1">
+            <input type="checkbox" id="switch"class="checkbox" />
+            <label for="switch" class="toggle"></label>
+        </div>
+
+    </div>
 
 </body>
 </html>

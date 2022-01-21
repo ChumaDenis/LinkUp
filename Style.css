@@ -1,89 +1,265 @@
 :root{
     --color-Primary:#0052FF;
+    --color-Primary-rgb: 0, 82, 255;
     --color-Secondary:#FE9526;
     --color-Info:#FFCB2F;
     --color-Success:#53D86A;
     --color-Error:#FF3434;
+
+
+
+    --shadow-border-bottom:inset 0 -1px 0 #EAEAEA;
+    --shadow-botom-level1: 0 2px 10px rgba(25, 1, 52, 0.12);
+    --shadow-botom-level2:0 4px 10px rgba(1, 21, 52, 0.16);
+    --shadow-top-border:inset 0 1px 0 #EAEAEA;
+    --shadow-top-level1: 0 -2px 10px rgba(25, 1, 52, 0.12);
+    --shadow-top-level2: 0 -4px 10px rgba(25, 1, 52, 0.16);
 }
 
+body{
+    background-color: rgba(229, 229, 229, 1);
+}
+hr{
+    border: 2px solid black;
+}
+
+.styleH{
+    font-family: Georgia, serif;
+}
+
+/********************************(p1-p4)********************************/
 p{
-    font-family: Arial,sans-serif;
+    font-family: "Times New Roman", serif;
+    color: darkblue;
 }
-.styleP1{
-    line-height: 28px;
+.P1{
     font-size: 20px;
-
-}
-.styleP2{
     line-height: 26px;
-    font-size: 18px;
 }
-.styleP3{
-    line-height: 24px;
+.P2{
     font-size: 16px;
+    line-height: 24px;
 }
-.styleP4{
-    line-height: 22px;
+.P3{
     font-size: 14px;
+    line-height: 22px;
 }
-
-.one {
-    background-color: var(--color-Primary);
+.P4{
+    font-size: 12px;
+    line-height: 20px;
+}
+/********************************(colors)********************************/
+div{
+    display: inline-block;
+}
+.genClass{
     width: 100px;
-    height: 150px;
-}
-.two {
-    background-color: var(--color-Info);
-    width: 100px;
-    height: 150px;
-}
-.three{
-    background-color: var(--color-Info);
-    width: 150px;
-    height:70px;
-    opacity: 48%;
-}
-
-
-.generalButton{
-    padding: 80px;
-    border: none;
-    background: rgba(190, 164, 164, 0.52);
-
+    height: 100px;
     position: relative;
 }
-.firstButton{
-    box-shadow: 0px 6px 15px rgba(1, 21, 52, 0.16);
-    border-radius: 6px;
+#one{
+    background-color: var(--color-Primary);
+    top:20px;
     left:20px;
 }
-.secondButton{
-    box-shadow: 0px -2px 10px rgba(25, 1, 52, 0.12);
-    border-radius: 6px;
-    left:80px;
+#two{
+    background-color: var(--color-Info);
+    opacity: 48%;
+    top: 20px;
+    left:140px;
+}
+#three{
+    background-color: rgba(var(--color-Primary-rgb), 0.3);
+    top: 20px;
+    left: 260px;
+}
+#hr1{
+    position: relative;
+    top:40px;
 }
 
-.generalButton2{
-    border-radius: 4px;
+/********************************(shadows)********************************/
+#backgroundShadows{
+    position: relative;
+    top: 80px;
+    left:50%;
+    transform: translate(-50%, 0px);
+    background-color: white;
+    height: 445px;
+    width: 864px;
+}
+.shadows{
+    padding: 60px;
+    border-radius: 8px;
+    border: none;
+    background: #F2F2F2;
+    position: absolute;
+}
+#h3Shadows{
+    color: #EAEAEA;
+    position: absolute;
+    font-family: Inter, serif;
+    font-size: 24px;
+    top:-5px;
+    left:20px;
+}
+#shadow1{
+    left: 122px;
+    top: 80px;
+    box-shadow: var(--shadow-border-bottom);
+}
+#shadow2{
+    left: 370px;
+    top: 80px;
+    box-shadow: var(--shadow-botom-level1);
+}
+#shadow3{
+    left: 622px;
+    top: 80px;
+    box-shadow: var(--shadow-botom-level2);
+}
+#shadow4{
+    left: 122px;
+    top: 265px;
+    box-shadow: var(--shadow-top-border);
+}
+#shadow5{
+    left: 371px;
+    top: 265px;
+    box-shadow: var(--shadow-top-level1);
+}
+#shadow6{
+    left: 622px;
+    top: 265px;
+    box-shadow: var(--shadow-top-level2);
+}
+#hr2{
+    position: relative;
+    top:110px;
+}
+/********************************(buttons)********************************/
+#backgroundButtons{
+    background-color: white;
+    position: relative;
+    top: 130px;
+    left:50%;
+    transform: translate(-50%, 0px);
+    height: 500px;
+    width: 1000px;
+}
+.styleButton1{
+    position: absolute;
+    border-radius: 6px;
     padding: 10px 40px;
-    font-size: 16px;
-    line-height: 24px;
+    border: none;
+    height: 48px;
+    width: 131px;
+}
+.styleButton2{
+    position: absolute;
+    border-radius: 6px;
+    padding: 10px 40px;
+    border: none;
+    height: 48px;
+    width: 159px;
+}
+.miniDiv{
+    background-color: white;
+    position: absolute;
+    height: 130px;
+    width: 150px;
+}
+.disabledBtn{
+    top: 60px;
 }
 .primaryButton{
     color: #FFFFFF;
     background-color: var(--color-Primary);
 }
+#primaryDiv1{
+    top: 80px;
+    left: 122px;
+}
+#primaryDiv2{
+    top: 80px;
+    left: 400px;
+}
+#ghostDiv1{
+    top: 300px;
+    left: 122px;
+}
+#ghostDiv2{
+    top: 300px;
+    left: 400px;
+}
+#ghostDiv3{
+    top: 300px;
+    left: 678px;
+}
+
+.vector1{
+    -webkit-text-stroke: 4px var(--color-Primary);
+}
+.vector2{
+    color: var(--color-Primary);
+    -webkit-text-stroke: 3px white;
+}
+.left-vector{
+    position: absolute;
+    left:28px;
+    top: 10px;
+}
+.right-vector{
+    position: absolute;
+    left:100px;
+    top: 10px;
+}
+.styleP{
+    position: absolute;
+    top:-3px;
+    left: 64px;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+.pBtn1{
+    color: white;
+    top:-3px;
+    left: 64px;
+}
+.pBtn2{
+    color: var(--color-Primary);
+    top:-3px;
+    left: 64px;
+}
+.pBtn3{
+    color: var(--color-Primary);
+    top:-3px;
+    left: 44px;
+}
+
+
+
 .primaryButton:hover{
-    opacity: 48%;
+    opacity: 80%;
 }
 .primaryButton:focus{
-    opacity: 48%;
+    opacity: 80%;
 }
 .primaryButton:disabled{
     color: var(--color-Primary);
-    opacity: 16%;
+    background-color: rgba(var(--color-Primary-rgb), 0.16);
+    opacity: 50%;
 }
-
+.primaryButton:disabled .pBtn1{
+    color:var(--color-Primary);
+}
+.primaryButton:disabled i{
+    color: var(--color-Primary);
+    -webkit-text-stroke: 3px rgb(214, 227, 255);
+}
 .ghostButton{
     color: var(--color-Primary);
     background: #FFFFFF;
@@ -92,15 +268,35 @@ p{
     border-radius: 4px;
 }
 .ghostButton:hover{
-    background-color: #E6EEFF;
+    background-color: rgba(var(--color-Primary-rgb), 0.2);
+}
+.ghostButton:hover i{
+    -webkit-text-stroke: 3px rgb(214, 227, 255);
 }
 .ghostButton:focus{
-    background-color: #E6EEFF;
+    background-color: rgba(var(--color-Primary-rgb), 0.2);
+}
+.ghostButton:focus i{
+    -webkit-text-stroke: 3px rgb(214, 227, 255);
 }
 .ghostButton:disabled{
     opacity: 16%;
 }
+#hr3{
+    position: relative;
+    top: 145px;
+}
+/********************************(inputs)********************************/
 
+#backgroundInputs{
+    background-color: white;
+    position: relative;
+    top: 170px;
+    left:50%;
+    transform: translate(-50%, 0px);
+    height: 500px;
+    width: 1300px;
+}
 
 .inputGeneral{
     padding:10px 40px;
@@ -108,144 +304,351 @@ p{
     border: 1px solid #BDBDBD;
     box-sizing: border-box;
     border-radius: 4px;
+    width: 320px;
+    height: 50px;
 }
+.input{
+    position: relative;
+    top:50px;
+    left:60px;
+}
+.explanation{
+    position: absolute;
+    font-size: 14px;
+    top:100px;
+    left:60px;
+    opacity: 0;
+}
+
+.input1{
+    padding-left: 16px;
+}
+.input2{
+    padding-right: 60px;
+    padding-left: 16px;
+}
+.inputDiv{
+    height: 200px;
+    width: 300px;
+}
+#div1{
+    position: absolute;
+    top:60px;
+    left:50px;
+}
+#div2{
+    position: absolute;
+    top:60px;
+    left:475px;
+}
+#div3{
+    position: absolute;
+    top:60px;
+    left:900px;
+}
+#divUser1{
+    position: absolute;
+    top:200px;
+    left:50px;
+}
+#divUser2{
+    position: absolute;
+    top:200px;
+    left:475px;
+}
+#divUser3{
+    position: absolute;
+    top:200px;
+    left:900px;
+}
+
+#divEye1{
+    position: absolute;
+    top:340px;
+    left:50px;
+}
+#divEye2{
+    position: absolute;
+    top:340px;
+    left:475px;
+}
+#divEye3{
+    position: absolute;
+    top:340px;
+    left:900px;
+}
+
 
 .user{
+    font-size: 40px;
     position: absolute;
-    color: #BDBDBD;
-    padding: 3px 0px;
+    top:59px;
+    left:79px;
+    color:#BDBDBD;
 }
-#user1{
-    left: 15px;
+.eye{
+    font-size: 40px;
+    position: absolute;
+    top:57px;
+    left:328px;
+    color:#BDBDBD;
+    -webkit-text-stroke: 0 white;
 }
-#user2{
-    left: 210px;
+.inputUser{
+    padding-left: 45px;
 }
 
-
-.inputGeneral:hover {
+.inputGeneral:hover{
     border-color: var(--color-Primary);
 }
-
 .inputGeneral:focus{
     border-color: var(--color-Primary);
 }
-
-.inputGeneral::grammar-error+.user{
-    color: var(--color-Error);
+.inputGeneral:invalid{
     border-color: var(--color-Error);
+
 }
-.inputGeneral::grammar-error+.user+.label{
+.inputGeneral:invalid ~ label{
     color: var(--color-Error);
-    opacity: 1;
+    opacity: 100%;
 }
-
-.inputGeneral:checked+.user{
-    color: var(--color-Success);
-    border-color: var(--color-Success);
+.inputGeneral:invalid ~ .user{
+    color: var(--color-Error);
 }
-
-.inputGeneral:visited+.user{
-    color: var(--color-Info);
+.inputGeneral:invalid ~ .eye{
+    color: var(--color-Error);
+}
+.inputGeneral:visited{
     border-color: var(--color-Info);
 }
-.inputGeneral:visited+.user+.explanation{
+.inputGeneral:visited~label{
     color: var(--color-Info);
-    opacity: 1;
+    opacity: 100%;
 }
-
+.inputGeneral:checked{
+    border-color: var(--color-Success);
+    color:var(--color-Success)
+}
 .inputGeneral:disabled{
-    background-color: #F2F2F2;
-    color: #BDBDBD;
-    border-color: #F2F2F2;
+    border:none;
+    background-color: rgba(242, 242, 242, 1);
+}
+#hr4{
+    position: relative;
+    top: 180px;
 }
 
-.explanation{
-  opacity: 0;
-}
 
+/********************************(dropdown)********************************/
 
 
 .dropbtn {
+    position: absolute;
     background-color: white;
     color: var(--color-Primary);
-    padding: 14px 100px;
+    padding: 30px 125px;
     font-size: 16px;
     border: 1px solid var(--color-Primary);
     box-sizing: border-box;
-    border-radius: 4px;
+    border-radius: 6px;
+}
+.pDropdown{
+    position: absolute;
+    left:20px;
+    top: 6px;
 }
 .dropdown {
     position: relative;
+    top:220px;
     display: inline-block;
+    width: 300px;
+    height: 300px;
 }
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
-    min-width: 300px;
+    top:75px;
+    background-color: white;
+    width: 250px;
+    border-radius: 5px;
 }
 .dropdown-content a {
-
-    color: black;
-    padding: 12px 100px;
+    color: rgba(0, 25, 76, 1);
+    padding: 14px 20px;
     display: block;
+    font-size: 16px;
+    border-width: 1px;
 }
+
+.down{
+    -webkit-text-stroke: 1px white;
+    position: absolute;
+    left: 210px;
+    top:23px;
+}
+.centerElem{
+    border-bottom: ridge #BDBDBD;
+    border-top: ridge #BDBDBD;
+}
+
 .dropdown-content a:hover {background-color: #ddd;}
 .dropdown:hover .dropdown-content {display: block;}
 .dropdown:hover .dropbtn {opacity: 48%;}
-
-
-.firstCheckBox{
-    width:40px;
-    height:40px;
-    vertical-align:middle;
+#hr5{
+    position: relative;
+    top:300px;
 }
-.firstCheckBox:checked+ label{
-    width: 40px;
-    height:40px;
+
+/********************************(checkbox)********************************/
+.switchDiv{
+    background-color: #BDBDBD;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 350px;
+}
+
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    font-size: 22px;
+
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background: #FFFFFF;
+    border: 2px solid var(--color-Primary);
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+input:checked ~ .checkmark {
+    background-color: var(--color-Primary);
+}
+
+.check{
+    -webkit-text-stroke: 3px var(--color-Primary);
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    color: white;
+    opacity: 0;
+}
+.container input:checked ~ .check {
+    opacity: 100%;
+}
+
+.container .checkbox:disabled ~ .check {
+    opacity: 0%;
     color: #FF3434;
 }
-.firstCheckBox:disabled{
-    opacity: 48%;
+.container .checkbox:disabled ~ .checkmark{
+    background-color: white;
+    border: 2px solid #E6EEFF;
 }
 
-.Radio{
-    width:40px;
-    height:40px;
-    vertical-align:middle;
+#checkbox1{
+    position: absolute;
+    top: 25px;
+    left: 26px;
+}
+#checkbox2{
+    position: absolute;
+    top: 25px;
+    left: 100px;
+}
+/********************************(radio)********************************/
+
+
+.radio {
+    -webkit-appearance: none;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 2px solid var(--color-Primary);
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+}
+
+.radio::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    border-radius: 50%;
+    transform: scale(0);
+    box-shadow: inset 1em 1em var(--color-Primary);
+}
+.radio:checked::before {
+    transform: scale(1);
 }
 
 
+.radio:disabled{
+    background: #FFFFFF;
+    border: 2px solid #E6EEFF;
+    box-sizing: border-box;
+}
+#radio1{
+    position: absolute;
+    top:70px;
+    left: 23px;
+}
+#radio2{
+    position: absolute;
+    top:70px;
+    left: 98px;
+}
 
+
+/********************************(switch)********************************/
 .toggle {
     position : relative ;
     display : inline-block;
-    width : 100px;
-    height : 52px;
-    border-radius: 30px;
-    border: 1px solid var(--color-Primary);
+    width : 48px;
+    height : 28px;
+    border-radius: 15px;
+    background-color: white;
+    border: none;
 }
 .toggle:after {
     content: '';
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: 24px;
+    height: 24px;
     border-radius: 50%;
     background-color: #E6EEFF;
-    top: 1px;
-    left: 1px;
-    transition:  all 0.5s;
+    top: 2px;
+    left: 2px;
 }
 
 .checkbox:checked + .toggle::after {
-    left : 49px;
+    left : 22px;
     background-color: var(--color-Primary);
 }
 
 .checkbox {
     display : none;
 }
-
-
-
+#switch1{
+    position: absolute;
+    top: 120px;
+    left: 25px;
+}
