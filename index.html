@@ -3,149 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <!--     (h1-h6)     -->
-    <h1 class="styleH">Arnold Book Company (ABC)</h1>
-    <h2 class="styleH">Arnold Book Company (ABC) was a British publisher of comic books that operated in the late 1940s and 1950s, most actively in the period 1950 to 1954. </h2>
-    <h3 class="styleH">Arnold Book Company (ABC) was a British publisher of comic books that operated in the late 1940s and 1950s, most actively in the period 1950 to 1954. </h3>
-    <h4 class="styleH">Arnold Book Company (ABC) was a British publisher of comic books that operated in the late 1940s and 1950s, most actively in the period 1950 to 1954. </h4>
-    <h5 class="styleH">Arnold Book Company (ABC) was a British publisher of comic books that operated in the late 1940s and 1950s, most actively in the period 1950 to 1954. </h5>
-    <h6 class="styleH">Arnold Book Company (ABC) was a British publisher of comic books that operated in the late 1940s and 1950s, most actively in the period 1950 to 1954. </h6>
+    <h1>Arnold Book Company (ABC)</h1>
+    <h2>Arnold Book Company (ABC) was a British publisher of comic books that operated in the late 1940s and 1950s, most actively in the period 1950 to 1954. </h2>
+    <h3>Arnold Book Company (ABC) was a British publisher of comic books that operated in the late 1940s and 1950s, most actively in the period 1950 to 1954. </h3>
+    <h4>Arnold Book Company (ABC) was a British publisher of comic books that operated in the late 1940s and 1950s, most actively in the period 1950 to 1954. </h4>
+    <h5>Arnold Book Company (ABC) was a British publisher of comic books that operated in the late 1940s and 1950s, most actively in the period 1950 to 1954. </h5>
+    <h6>Arnold Book Company (ABC) was a British publisher of comic books that operated in the late 1940s and 1950s, most actively in the period 1950 to 1954. </h6>
     <hr>
     <!--     (p1-p4)     -->
     <p class="P1">In the 1950s, Arnold Book Company suffered from a backlash against some of its horror comics reprints, leading to the company's closure in 1958. </p>
     <p class="P2">In the 1950s, Arnold Book Company suffered from a backlash against some of its horror comics reprints, leading to the company's closure in 1958. </p>
     <p class="P3">In the 1950s, Arnold Book Company suffered from a backlash against some of its horror comics reprints, leading to the company's closure in 1958. </p>
     <p class="P4">In the 1950s, Arnold Book Company suffered from a backlash against some of its horror comics reprints, leading to the company's closure in 1958. </p>
-    <hr>
+
     <!--     (colors)     -->
-    <div id="one" class="genClass"></div>
-    <div id="two" class="genClass"></div>
-    <div id="three" class="genClass"></div>
+    <div class="genClass">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+    </div>
     <hr id="hr1">
     <!--     (shadows)     -->
-    <div id="backgroundShadows">
+    <div class="generalShadows">
         <h3 id="h3Shadows">Shadows</h3>
-        <button id="shadow1" class="shadows"></button>
-        <button id="shadow2" class="shadows"></button>
-        <button id="shadow3" class="shadows"></button>
+        <button class="shadow1"></button>
+        <button class="shadow2"></button>
+        <button class="shadow3"></button>
         <br>
-        <button id="shadow4" class="shadows"></button>
-        <button id="shadow5" class="shadows"></button>
-        <button id="shadow6" class="shadows"></button>
+        <button class="shadow4"></button>
+        <button class="shadow5"></button>
+        <button class="shadow6"></button>
     </div>
-    <hr id="hr2">
     <!--     (buttons)     -->
-    <div id="backgroundButtons">
-        <div id="primaryDiv1" class="miniDiv">
-            <button class="button primaryButton styleButton1">Button</button>
-            <button disabled class="disabledBtn primaryButton styleButton1">Button</button>
+    <div class="generalButtons">
+        <div>
+            <button class="primaryButton styleButton">Button</button>
+            <button disabled class="primaryButton styleButton">Button</button>
         </div>
-        <div id="primaryDiv2" class="miniDiv">
-            <button class="primaryButton styleButton2"><i class="fa fa-arrow-left fa-2x vector1 left-vector"></i><p class="pBtn1 styleP">Button</p></button>
-            <button disabled class="disabledBtn primaryButton styleButton2"><i class="fa fa-arrow-left fa-2x vector1 left-vector"></i><p class="pBtn1 styleP">Button</p></button>
+        <div>
+            <button class="primaryButton styleButtonIcon"><i class="fa fa-arrow-left fa-2x primaryVector left-vector"></i><p class="pBtn1">Button</p></button>
+            <button disabled class="primaryButton styleButtonIcon"><i class="fa fa-arrow-left fa-2x primaryVector left-vector"></i><p class="pBtn1">Button</p></button>
         </div>
-
-        <div id="ghostDiv1" class="miniDiv">
-            <button class="ghostButton styleButton1">Button</button>
-            <button disabled class="disabledBtn ghostButton styleButton1">Button</button>
+        <div></div>
+        <div>
+            <button class="ghostButton styleButton">Button</button>
+            <button disabled class="ghostButton styleButton">Button</button>
         </div>
-        <div id="ghostDiv2" class="miniDiv">
-            <button class="ghostButton styleButton2"><i class="fa fa-arrow-left fa-2x vector2 left-vector"></i><p class="pBtn2 styleP">Button</p></button>
-            <button disabled class="disabledBtn ghostButton styleButton2"><i class="fa fa-arrow-left fa-2x vector2 left-vector"></i><p class="pBtn2 styleP">Button</p></button>
+        <div>
+            <button class="ghostButton styleButtonIcon"><i class="fa fa-arrow-left fa-2x ghostVector left-vector"></i><p class="pBtn2">Button</p></button>
+            <button disabled class="ghostButton styleButtonIcon"><i class="fa fa-arrow-left fa-2x ghostVector left-vector"></i><p class="pBtn2">Button</p></button>
         </div>
-        <div id="ghostDiv3" class="miniDiv">
-            <button class="ghostButton styleButton2"><p class="pBtn3 styleP">Button</p><i class="fa fa-arrow-right fa-2x vector2 right-vector"></i></button>
-            <button disabled class="disabledBtn ghostButton styleButton2"><p class="pBtn3 styleP">Button</p><i class="fa fa-arrow-right fa-2x vector2 right-vector"></i></button>
+        <div>
+            <button class="ghostButton styleButtonIcon"><p class="pBtn3">Button</p><i class="fa fa-arrow-right fa-2x ghostVector right-vector"></i></button>
+            <button disabled class="ghostButton styleButtonIcon"><p class="pBtn3">Button</p><i class="fa fa-arrow-right fa-2x ghostVector right-vector"></i></button>
         </div>
     </div>
-    <hr id="hr3">
     <!--     (inputs)     -->
-    <div id="backgroundInputs">
-        <div id="div1" class="inputDiv">
-            <input type="text" id="i1" class="inputGeneral input input1">
-            <label for="i1" class="explanation">With explanation</label>
+    <div class="backgroundInputs">
+        <div class="inputDiv">
+            <input placeholder="Hello world!" type="text" class="inputGeneral">
+            <p class="explanation">With explanation</p>
         </div>
-        <div id="div2" class="inputDiv">
-            <input required type="text" id="i2" class="inputGeneral input input1">
-            <label for="i2" class="explanation">With explanation</label>
+        <div class="inputDiv">
+            <input placeholder="Hello world!" required type="text" class="inputGeneral">
+            <p class="explanation">With explanation</p>
         </div>
-        <div id="div3" class="inputDiv">
-            <input disabled type="text" id="i3" class="inputGeneral input input1">
-            <label for="i3" class="explanation">With explanation</label>
+        <div class="inputDiv">
+            <input placeholder="Hello world!" disabled type="text" class="inputGeneral">
+            <p class="explanation">With explanation</p>
         </div>
-        <div id="divUser1" class="inputDiv">
-            <input type="text" id="iUser1" class="inputUser inputGeneral input input1">
-            <i class="fa fa-user fa-2x user"></i>
+        <div class="inputDiv">
+            <input placeholder="Hello world!" type="text" id="iUser1" class="inputGeneral inputLeftIcon">
+            <i class="fa fa-user fa-2x userIcon"></i>
             <label for="iUser1" class="explanation">With explanation</label>
         </div>
-        <div id="divUser2" class="inputDiv">
-            <input required type="text" id="iUser2" class=" inputUser inputGeneral input input1">
-            <i class="fa fa-user fa-2x user"></i>
-            <label for="iUser2" class="explanation">With explanation</label>
+        <div class="inputDiv">
+            <input placeholder="Hello world!" required type="text" class="inputGeneral inputLeftIcon">
+            <i class="fa fa-user fa-2x userIcon"></i>
+            <p class="explanation">With explanation</p>
         </div>
-        <div id="divUser3" class="inputDiv">
-            <input disabled type="text" id="iUser3" class=" inputUser inputGeneral input input1">
-            <i class="fa fa-user fa-2x user"></i>
-            <label for="iUser3" class="explanation">With explanation</label>
+        <div class="inputDiv">
+            <input placeholder="Hello world!" disabled type="text" class="inputGeneral inputLeftIcon">
+            <i class="fa fa-user fa-2x userIcon"></i>
+            <p class="explanation">With explanation</p>
         </div>
-        <div id="divEye1" class="inputDiv">
-            <input type="text" id="iEye1" class=" inputGeneral input input2">
-            <i class="fa fa-eye-slash fa-2x eye"></i>
-            <label for="iEye1" class="explanation">With explanation</label>
+        <div class="inputDiv">
+            <input placeholder="Hello world!" type="text" class="inputGeneral inputRightIcon">
+            <i class="fa fa-eye-slash fa-2x eyeIcon"></i>
+            <p class="explanation">With explanation</p>
         </div>
-        <div id="divEye2" class="inputDiv">
-            <input required type="text" id="iEye2" class="inputGeneral input input2">
-            <i class="fa fa-eye-slash fa-2x eye"></i>
-            <label for="iEye2" class="explanation">With explanation</label>
+        <div class="inputDiv">
+            <input placeholder="Hello world!" required type="text" class="inputGeneral inputRightIcon">
+            <i class="fa fa-eye-slash fa-2x eyeIcon"></i>
+            <p class="explanation">With explanation</p>
         </div>
-        <div id="divEye3" class="inputDiv">
-            <input disabled type="text" id="iEye3" class="inputGeneral input input2">
-            <i class="fa fa-eye-slash fa-2x eye"></i>
-            <label for="iEye3" class="explanation">With explanation</label>
+        <div class="inputDiv">
+            <input placeholder="Hello world!" disabled type="text" class="inputGeneral inputRightIcon">
+            <i class="fa fa-eye-slash fa-2x eyeIcon"></i>
+            <p class="explanation">With explanation</p>
         </div>
     </div>
-    <hr id="hr4">
     <!--     (dropdown)     -->
 
 
-    <div class="dropdown">
-        <button class="dropbtn"><p class="pDropdown">Select</p><i class="fa fa-chevron-down down"></i></button>
+    <div class="dropdownDiv">
+        <button class="dropButton"><p class="pDropdown">Select</p><i class="fa fa-chevron-down downIcon"></i></button>
         <div class="dropdown-content">
             <a>First</a>
-            <a class="centerElem">Second</a>
+            <a>Second</a>
             <a>Third</a>
         </div>
     </div>
-    <hr id="hr5">
     <!--     (checkbox\switch)     -->
 
-    <div class="switchDiv">
-        <label id="checkbox1" class="container">
+    <div class="generalDiv">
+        <label class="container">
             <input class="checkbox" type="checkbox" checked="checked">
             <span class="checkmark"></span>
             <i class="fa fa-check check"></i>
         </label>
-        <label id="checkbox2" class="container">
+        <label class="container">
             <input disabled class="checkbox" type="checkbox" checked="checked">
             <span class="checkmark"></span>
             <i class="fa fa-check check"></i>
         </label>
-        <div id="radio1">
+        <div class="radioDiv">
             <label class="form-control">
                 <input class="radio" type="radio" name="radio" />
             </label>
         </div>
-        <div id="radio2">
+        <div class="radioDiv">
             <label class="form-control">
                 <input disabled class="radio" type="radio" name="radio" />
             </label>
         </div>
-        <div id="switch1">
-            <input type="checkbox" id="switch"class="checkbox" />
+        <div class="switch1">
+            <input type="checkbox" id="switch" class="checkbox" />
             <label for="switch" class="toggle"></label>
         </div>
 
